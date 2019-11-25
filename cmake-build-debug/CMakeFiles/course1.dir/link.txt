@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/course1.dir/main.c.o CMakeFiles/course1.dir/text.c.o CMakeFiles/course1.dir/sentence.c.o  -o course1 
