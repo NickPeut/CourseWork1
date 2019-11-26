@@ -126,18 +126,18 @@ void checkWord(Text_t *text, Sentence_t *word, Text_t *ansText, size_t i) {
         freeSentence(word);
     }
 }
-
+/*
 void deleteSameSentence(Text_t *text) {
     for (size_t i = 0; i < text->size - 1; i++) {
         for (size_t j = i; j < text->size; j++) {
-            if (wcpcpy(text->sentences[i]->symbols, text->sentences[j]->symbols)) {
+            if (wcpncpy(text->sentences[i]->symbols, text->sentences[j]->symbols)) {
                 deleteSentences(text, j);
                 j--;
             }
         }
     }
 }
-
+*/
 void printUniqueWords(Text_t* text, FILE* file) {
     size_t i = 0;
     size_t j = 0;
