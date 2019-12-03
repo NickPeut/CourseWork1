@@ -15,6 +15,7 @@
     int cmp(const void* a, const void* b);
     void sortText(Text_t* text);
     void printText(Text_t *text, FILE *file);
+    void dateProcessing(Text_t* text);
     void deleteSentences(Text_t* text, size_t ind);
     void processingText(Text_t* text);
     void freeText(Text_t* text);

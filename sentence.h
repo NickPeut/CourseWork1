@@ -17,7 +17,7 @@
     } Sentence_t;
 
     void initSentence(Sentence_t* sentence);
-    bool isEndingSentence(char x);
+    bool isEndingOfSentence(char x);
     bool isSentenceSeparator(char x);
     void reserveSentenceMemory(Sentence_t* sentence, size_t newCapacity);
     void addSymbolToSentence(Sentence_t* sentence, wchar_t symbol);

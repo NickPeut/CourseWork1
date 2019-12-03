@@ -7,7 +7,7 @@ void initSentence(Sentence_t* sentence){
     sentence->product = 1;
 }
 
-bool isEndingSentence(char x) {
+bool isEndingOfSentence(char x) {
     return x == '.';
 }
 
@@ -45,7 +45,7 @@ void readSentence(Sentence_t* sentence, FILE *file) {
         addSymbolToSentence(sentence, symbol);
         if (isTerminalSymbol(symbol))
             break;
-        if (isEndingSentence(symbol))
+        if (isEndingOfSentence(symbol))
             break;
     } while(symbol != WEOF || symbol != L'\n');
 }
@@ -63,7 +63,7 @@ void updateSentenceProduct(Sentence_t* sentence){
             k = 0;
         }
         else{
-            if(!isEndingSentence(sentence->symbols[i]))
+            if(!isEndingOfSentence(sentence->symbols[i]))
                 k++;
         }
     }

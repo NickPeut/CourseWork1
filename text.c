@@ -1,163 +1,1 @@
-#include "text.h"
-
-
-void initText(Text_t* text) {
-    text->capacity = 10;
-    text->sentences = (Sentence_t**)malloc(text->capacity * sizeof(Sentence_t*));
-    text->size = 0;
-}
-
-
-void reserveTextMemory(Text_t* text, size_t newCapacity) {
-    text->sentences = (Sentence_t**)(realloc(text->sentences, newCapacity * sizeof(Sentence_t*)));
-    text->capacity = newCapacity;
-}
-
-
-void addSentenceToText(Text_t* text, Sentence_t* sentence) {
-    if (text->size == text->capacity) {
-        reserveTextMemory(text, text->capacity * 2);
-    }
-    text->sentences[text->size] = sentence;
-    text->size++;
-}
-
-void readText(Text_t* text, FILE *file) {
-    while (true) {
-        Sentence_t *sentence = (Sentence_t *) malloc(sizeof(Sentence_t));
-        initSentence(sentence);
-        readSentence(sentence, file);
-        updateSentenceProduct(sentence);
-        if (sentence->size == 0 || isTerminalSymbol(sentence->symbols[sentence->size - 1])) {
-            freeSentence(sentence);
-            break;
-        }
-        addSentenceToText(text, sentence);
-    }
-}
-int cmp(const void* a, const void* b){
-    return ((*((Sentence_t**)a))->product - (*((Sentence_t**)b))->product);
-}
-
-void sortText(Text_t* text){
-    qsort(text->sentences, text->size, sizeof(Sentence_t*), (__compar_fn_t) cmp);
-}
-
-
-void printText(Text_t *text, FILE *file) {
-    for (size_t i = 0; i < text->size; i++) {
-        fwprintf(file,L"%ls ", text->sentences[i]->symbols);
-    }
-}
-
-void deleteSentences(Text_t* text, size_t ind) {
-    freeSentence(text->sentences[ind]);
-    for (size_t i = ind; i < text->size - 1; i++) {
-        text->sentences[i] = text->sentences[i+1];
-    }
-    text->size--;
-}
-
-void processingText(Text_t* text) {
-    for (size_t i = 0;  i < text->size; i++) {
-        if (!foundInSentence(text->sentences[i])) {
-            deleteSentences(text, i);
-            i--;
-        }
-    }
-}
-
-bool isWordInSentence(Sentence_t* sentence, Sentence_t* word){
-    int count = 0;
-    for(int i = 0; i < sentence->size - word->size; i++){
-        int j = 0;
-        for(j = 0; j < word->size; j++){
-            if(sentence->symbols[i+j] != word->symbols[j]) {
-                break;
-            }
-        }
-        if(j == word->size){
-            count++;
-        }
-    }
-    return count > 1;
-}
-
-
-
-Sentence_t* getWord(Text_t* text, size_t* i, size_t* j){
-    Sentence_t *word = (Sentence_t *) malloc(sizeof(Sentence_t));
-    initSentence(word);
-    while(*i < text->size) {
-        if(*j != 0) do {
-            (*j)++;
-        } while(*j < text->sentences[*i]->size && (isEndingSentence(text->sentences[*i]->symbols[*j]) || isSentenceSeparator(text->sentences[*i]->symbols[*j])));
-        if(*j >= text->sentences[*i]->size){
-            (*i)++;
-            (*j = 0);
-        }
-        while(*j < text->sentences[*i]->size && !isEndingSentence(text->sentences[*i]->symbols[*j]) && !isSentenceSeparator(text->sentences[*i]->symbols[*j])){
-            addSymbolToSentence(word, text->sentences[*i]->symbols[*j]);
-            (*j)++;
-            if(*j >= text->sentences[*i]->size || isEndingSentence(text->sentences[*i]->symbols[*j]) || isSentenceSeparator(text->sentences[*i]->symbols[*j])){
-                return word;
-            }
-        }
-        (*i)++;
-        (*j = 0);
-    }
-    return word;
-}
-
-void checkWord(Text_t *text, Sentence_t *word, Text_t *ansText, size_t i) {
-    bool flag = true;
-    for(size_t k = 0; k < text->size; k++) {
-        if(k != i) {
-            if(wcsstr(text->sentences[k]->symbols, word->symbols)){
-                flag = (flag * false);
-            }
-        } else {
-            flag = (flag * !isWordInSentence(text->sentences[k], word));
-        }
-    }
-    if(flag) {
-        addSentenceToText(ansText, word);
-    } else {
-        freeSentence(word);
-    }
-}
-/*
-void deleteSameSentence(Text_t *text) {
-    for (size_t i = 0; i < text->size - 1; i++) {
-        for (size_t j = i; j < text->size; j++) {
-            if (wcpncpy(text->sentences[i]->symbols, text->sentences[j]->symbols)) {
-                deleteSentences(text, j);
-                j--;
-            }
-        }
-    }
-}
-*/
-void printUniqueWords(Text_t* text, FILE* file) {
-    size_t i = 0;
-    size_t j = 0;
-    Text_t* ansText = (Text_t*)malloc(sizeof(Text_t));
-    initText(ansText);
-    while(i < text->size) {
-        Sentence_t* word = getWord(text, &i, &j);
-        checkWord(text, word, ansText, i);
-
-    }
-    printText(ansText, file);
-    freeText(ansText);
-}
-
-
-
-void freeText(Text_t* text) {
-    for (size_t i = 0; i < text->size; i++) {
-        freeSentence(text->sentences[i]);
-    }
-    free(text->sentences);
-    free(text);
-}
+#include "text.h"bool check(Text_t *text, Sentence_t *word, int index);Sentence_t* foundDate(Sentence_t *sentence);void initText(Text_t* text) {    text->capacity = 10;    text->sentences = (Sentence_t**)malloc(text->capacity * sizeof(Sentence_t*));    text->size = 0;}void reserveTextMemory(Text_t* text, size_t newCapacity) {    text->sentences = (Sentence_t**)(realloc(text->sentences, newCapacity * sizeof(Sentence_t*)));    text->capacity = newCapacity;}void addSentenceToText(Text_t* text, Sentence_t* sentence) {    if (text->size == text->capacity) {        reserveTextMemory(text, text->capacity * 2);    }    text->sentences[text->size] = sentence;    text->size++;}void readText(Text_t* text, FILE *file) {    while (true) {        Sentence_t *sentence = (Sentence_t *) malloc(sizeof(Sentence_t));        initSentence(sentence);        readSentence(sentence, file);        updateSentenceProduct(sentence);        if (sentence->size == 0 || isTerminalSymbol(sentence->symbols[sentence->size - 1])) {            freeSentence(sentence);            break;        }        addSentenceToText(text, sentence);    }}int cmp(const void* a, const void* b){    return ((*((Sentence_t**)a))->product - (*((Sentence_t**)b))->product);}void sortText(Text_t* text){    qsort(text->sentences, text->size, sizeof(Sentence_t*), (__compar_fn_t) cmp);}void printText(Text_t *text, FILE *file) {    for (size_t i = 0; i < text->size; i++) {        fwprintf(file,L"%ls ", text->sentences[i]->symbols);    }}void deleteSentences(Text_t* text, size_t ind) {    freeSentence(text->sentences[ind]);    for (size_t i = ind; i < text->size - 1; i++) {        text->sentences[i] = text->sentences[i+1];    }    text->size--;}void processingText(Text_t* text) {    for (size_t i = 0;  i < text->size; i++) {        if (!foundInSentence(text->sentences[i])) {            deleteSentences(text, i);            i--;        }    }}bool isWordInSentence(Sentence_t* sentence, Sentence_t* word){    int count = 0;    for(int i = 0; i < sentence->size - word->size; i++){        int j = 0;        for(j = 0; j < word->size; j++){            if(sentence->symbols[i+j] != word->symbols[j]) {                break;            }        }        if(j == word->size){            count++;        }    }    return count > 1;}Sentence_t* getWord(Text_t* text, size_t* i, size_t* j){    Sentence_t *word = (Sentence_t *) malloc(sizeof(Sentence_t));    initSentence(word);    while(*i < text->size) {        if(*j != 0)            do {                (*j)++;            } while(*j < text->sentences[*i]->size && (isEndingOfSentence(text->sentences[*i]->symbols[*j]) || isSentenceSeparator(text->sentences[*i]->symbols[*j])));            if(*j >= text->sentences[*i]->size){                (*i)++;                (*j = 0);        }        while(*j < text->sentences[*i]->size && !isEndingOfSentence(text->sentences[*i]->symbols[*j]) && !isSentenceSeparator(text->sentences[*i]->symbols[*j])){            addSymbolToSentence(word, text->sentences[*i]->symbols[*j]);            (*j)++;            if(*j >= text->sentences[*i]->size || isEndingOfSentence(text->sentences[*i]->symbols[*j]) || isSentenceSeparator(text->sentences[*i]->symbols[*j])){                return word;            }        }        (*i)++;        (*j = 0);    }    return word;}void checkWord(Text_t *text, Sentence_t *word, Text_t *ansText, size_t i) {    bool flag = true;    for(size_t k = 0; k < text->size; k++) {        if(k != i) {            if(check(text, word, k)){                flag = (flag * false);            }        } else {            flag = (flag * !isWordInSentence(text->sentences[k], word));        }    }    if(flag) {        addSentenceToText(ansText, word);    } else {        freeSentence(word);    }}bool check(Text_t *text, Sentence_t *word, int index) {     wchar_t* ptr = (wchar_t *)wcsstr(text->sentences[index]->symbols, word->symbols);     if(ptr == NULL)         return false;     if(ptr == text->sentences[index]->symbols){         int i = 0;         while(!isSentenceSeparator(text->sentences[index]->symbols[i]) && !isEndingOfSentence(                 text->sentences[index]->symbols[i]) && i < text->sentences[index]->size)             i++;         if(i < text->sentences[index]->size)             return true;     }     else {         if(isSentenceSeparator(*(ptr-1))){             int i = 0;             while(i < word->size && ptr < &(text->sentences[index]->symbols[text->sentences[index]->size - 1]) && *ptr == word->symbols[i])                 i++;             if(i == text->sentences[index]->size)                 return true;         }     }    return false;}void dateProcessing(Text_t* text) {    for(size_t i = 0; i < text->size; i++) {        text->sentences[i] = foundDate(text->sentences[i]);    }}Sentence_t* updateSentenceDate(Sentence_t *sentence, size_t index, wchar_t* month) {    Sentence_t* newSentence = (Sentence_t*)malloc(sizeof(Sentence_t));    initSentence(newSentence);    for(size_t i = 0; i < index; i++) {        addSymbolToSentence(newSentence, sentence->symbols[i]);    }    addSymbolToSentence(newSentence, sentence->symbols[index]);    index++;    addSymbolToSentence(newSentence, sentence->symbols[index]);    addSymbolToSentence(newSentence, L'/');    addSymbolToSentence(newSentence, month[0]);    addSymbolToSentence(newSentence, month[1]);    addSymbolToSentence(newSentence, L'/');    while(sentence->symbols[index]!= L'г' && sentence->symbols[index + 1]!= L'.') {        index++;    }    index -= 5;    int k = 0;    while(k < 4) {        k++;        addSymbolToSentence(newSentence, sentence->symbols[index]);        index++;    }    addSymbolToSentence(newSentence, L'.');    addSymbolToSentence(newSentence, L'\0');    freeSentence(sentence);    updateSentenceProduct(newSentence);    return newSentence;}Sentence_t* foundDate(Sentence_t *sentence) {    wchar_t number[31][3] = {            L"01", L"02", L"03", L"04", L"05", L"06", L"07", L"08", L"09",            L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19",            L"20", L"21", L"22", L"23", L"24", L"25", L"26", L"27", L"28", L"29",            L"30\0", L"31\0"};    wchar_t month[12][11] = {L" января ", L" февраля ",                             L" марта ", L" апреля ", L" мая ",                             L" июня ", L" июля ", L" августа ",                             L" сентября ", L" октября ", L" ноября ",                             L" декабря "};    for (size_t i = 0; i < sentence->size - 1; i++) {        if (i != 0) {            if (!isSentenceSeparator(sentence->symbols[i - 1])) {                continue;            }        }        if (iswdigit(sentence->symbols[i])) {            int d;            for (d = 0; d < 32; d++){                if (sentence->symbols[i] == number[d][0] && sentence->symbols[i + 1] == number[d][1]) {                    break;                }            }            if (d == 32)                continue;            size_t m = 0;            bool flag = false;            for (m = 0; m < 12; m++) {                flag = false;                if (sentence->size - i < 2 + wcslen(month[m]) + 4)                    continue;                for (size_t s = 0; s < wcslen(month[m]); ++s) {                    if (sentence->symbols[i+2+s] != month[m][s]) {                        flag = true;                        break;                    }                }                if (flag) {                    continue;                }                if(!(iswdigit(sentence->symbols[i + 2  + wcslen(month[m])])                                                && iswdigit(sentence->symbols[i + 2 + wcslen(month[m]) + 1])                                                && iswdigit(sentence->symbols[i + 2 + wcslen(month[m]) + 2])                                                && iswdigit(sentence->symbols[i + 2 + wcslen(month[m]) + 3]))) {                    flag = true;                    continue;                }                if (sentence->symbols[i + 2 + +wcslen(month[m]) + 5] != L'г' ||                    sentence->symbols[i + 2 + +wcslen(month[m]) + 6] != L'.')                    continue;                sentence = updateSentenceDate(sentence, i, number[m]);                break;            }            if (flag) {                continue;            }        }    }    return sentence;}void deleteSameSentence(Text_t *text) {    for (size_t i = 0; i < text->size - 1; i++) {        for (size_t j = i+1; j < text->size; j++) {            if (wcscasecmp(text->sentences[i]->symbols, text->sentences[j]->symbols) == 0) {                deleteSentences(text, j);                j--;            }        }    }}void printUniqueWords(Text_t* text, FILE* file) {    size_t i = 0;    size_t j = 0;    Text_t* ansText = (Text_t*)malloc(sizeof(Text_t));    initText(ansText);    while(i < text->size) {        Sentence_t* word = getWord(text, &i, &j);        checkWord(text, word, ansText, i);    }    printText(ansText, file);    freeText(ansText);}void freeText(Text_t* text) {    for (size_t i = 0; i < text->size; i++) {        freeSentence(text->sentences[i]);    }    free(text->sentences);    free(text);}
