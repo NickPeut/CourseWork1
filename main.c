@@ -19,7 +19,7 @@ int main() {
             printUniqueWords(text, output);
             break;
         case 2:
-          //  dateProcessing(text);
+            dateProcessing(text);
             printText(text, output);
             break;
         case 3:
