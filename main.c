@@ -30,6 +30,9 @@ int main() {
             processingText(text);
             printText(text, output);
             break;
+        default:
+            fwprintf(output, L"Error: не существующее действие.");
+
     }
 
     fclose(output);
