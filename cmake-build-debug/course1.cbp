@@ -87,6 +87,12 @@
 		<Unit filename="/home/nuka/CLionProjects/CourseWork/menu.h">
 			<Option target="course1"/>
 		</Unit>
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/processign_text.c">
+			<Option target="course1"/>
+		</Unit>
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/processign_text.h">
+			<Option target="course1"/>
+		</Unit>
 		<Unit filename="/home/nuka/CLionProjects/CourseWork/sentence.c">
 			<Option target="course1"/>
 		</Unit>

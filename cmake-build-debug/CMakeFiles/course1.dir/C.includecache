@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/nuka/CLionProjects/CourseWork/main.c
-menu.h
-/home/nuka/CLionProjects/CourseWork/menu.h
+/home/nuka/CLionProjects/CourseWork/processign_text.c
+processign_text.h
+/home/nuka/CLionProjects/CourseWork/processign_text.h
 
-/home/nuka/CLionProjects/CourseWork/menu.c
-menu.h
-/home/nuka/CLionProjects/CourseWork/menu.h
-
-/home/nuka/CLionProjects/CourseWork/menu.h
+/home/nuka/CLionProjects/CourseWork/processign_text.h
 text.h
 /home/nuka/CLionProjects/CourseWork/text.h
-unique_sentence_in_text.h
-/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.h
-sort_sentence_product.h
-/home/nuka/CLionProjects/CourseWork/sort_sentence_product.h
+
+/home/nuka/CLionProjects/CourseWork/sentence.c
+sentence.h
+/home/nuka/CLionProjects/CourseWork/sentence.h
 
 /home/nuka/CLionProjects/CourseWork/sentence.h
 stdio.h
@@ -53,20 +49,4 @@ text.h
 /home/nuka/CLionProjects/CourseWork/text.h
 sentence.h
 /home/nuka/CLionProjects/CourseWork/sentence.h
-
-/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c
-unique_sentence_in_text.h
-/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.h
-
-/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.h
-text.h
-/home/nuka/CLionProjects/CourseWork/text.h
-
-/home/nuka/CLionProjects/CourseWork/update_format_date.c
-update_format_date.h
-/home/nuka/CLionProjects/CourseWork/update_format_date.h
-
-/home/nuka/CLionProjects/CourseWork/update_format_date.h
-text.h
-/home/nuka/CLionProjects/CourseWork/text.h
 

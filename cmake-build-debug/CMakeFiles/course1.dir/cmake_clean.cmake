@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/course1.dir/main.c.o"
   "CMakeFiles/course1.dir/menu.c.o"
+  "CMakeFiles/course1.dir/processign_text.c.o"
   "CMakeFiles/course1.dir/sentence.c.o"
   "CMakeFiles/course1.dir/sort_sentence_product.c.o"
   "CMakeFiles/course1.dir/text.c.o"

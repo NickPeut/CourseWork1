@@ -15,6 +15,11 @@ CMakeFiles/course1.dir/menu.c.o: ../sort_sentence_product.h
 CMakeFiles/course1.dir/menu.c.o: ../text.h
 CMakeFiles/course1.dir/menu.c.o: ../unique_sentence_in_text.h
 
+CMakeFiles/course1.dir/processign_text.c.o: ../processign_text.c
+CMakeFiles/course1.dir/processign_text.c.o: ../processign_text.h
+CMakeFiles/course1.dir/processign_text.c.o: ../sentence.h
+CMakeFiles/course1.dir/processign_text.c.o: ../text.h
+
 CMakeFiles/course1.dir/sentence.c.o: ../sentence.c
 CMakeFiles/course1.dir/sentence.c.o: ../sentence.h
 

@@ -72,32 +72,6 @@ void updateSentenceProduct(Sentence_t* sentence){
 }
 
 
-bool isSentenceIncludeDigit(Sentence_t* sentence){
-    for (size_t i = 0; i < sentence->size; i ++) {
-        if(iswdigit(sentence->symbols[i]))
-            return true;
-    }
-    return false;
-}
-
-bool isSentenceIncludeSearchWchar(Sentence_t* sentence){
-    for (size_t i = 0; i < sentence->size; i ++) {
-        if(sentence->symbols[i] == L'#' || sentence->symbols[i] == L'№')
-            return true;
-    }
-    return false;
-}
-
-bool foundInSentence(Sentence_t* sentence) {
-    if (isSentenceIncludeSearchWchar(sentence)) {
-        if (isSentenceIncludeDigit(sentence)) {
-            return true;
-        }
-        return false;
-    }
-    return true;
-}
-
 void freeSentence(Sentence_t* sentence) {
     free(sentence->symbols);
     free(sentence);

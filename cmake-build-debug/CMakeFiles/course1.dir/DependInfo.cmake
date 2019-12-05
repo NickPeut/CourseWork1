@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/nuka/CLionProjects/CourseWork/main.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/main.c.o"
   "/home/nuka/CLionProjects/CourseWork/menu.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/menu.c.o"
+  "/home/nuka/CLionProjects/CourseWork/processign_text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/processign_text.c.o"
   "/home/nuka/CLionProjects/CourseWork/sentence.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/sentence.c.o"
   "/home/nuka/CLionProjects/CourseWork/sort_sentence_product.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/sort_sentence_product.c.o"
   "/home/nuka/CLionProjects/CourseWork/text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/text.c.o"

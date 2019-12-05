@@ -177,6 +177,33 @@ menu.c.s:
 	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.s
 .PHONY : menu.c.s
 
+processign_text.o: processign_text.c.o
+
+.PHONY : processign_text.o
+
+# target to build an object file
+processign_text.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/processign_text.c.o
+.PHONY : processign_text.c.o
+
+processign_text.i: processign_text.c.i
+
+.PHONY : processign_text.i
+
+# target to preprocess a source file
+processign_text.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/processign_text.c.i
+.PHONY : processign_text.c.i
+
+processign_text.s: processign_text.c.s
+
+.PHONY : processign_text.s
+
+# target to generate assembly for a file
+processign_text.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/processign_text.c.s
+.PHONY : processign_text.c.s
+
 sentence.o: sentence.c.o
 
 .PHONY : sentence.o
@@ -327,6 +354,9 @@ help:
 	@echo "... menu.o"
 	@echo "... menu.i"
 	@echo "... menu.s"
+	@echo "... processign_text.o"
+	@echo "... processign_text.i"
+	@echo "... processign_text.s"
 	@echo "... sentence.o"
 	@echo "... sentence.i"
 	@echo "... sentence.s"
