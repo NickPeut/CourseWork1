@@ -1,0 +1,5 @@
+#ifndef COURSE1_UPDATE_FORMAT_DATE_H
+#define COURSE1_UPDATE_FORMAT_DATE_H
+    #include "text.h"
+
+#endif //COURSE1_UPDATE_FORMAT_DATE_H

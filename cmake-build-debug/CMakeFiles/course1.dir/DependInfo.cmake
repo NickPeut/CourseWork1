@@ -4,9 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nuka/CLionProjects/course1/main.c" "/home/nuka/CLionProjects/course1/cmake-build-debug/CMakeFiles/course1.dir/main.c.o"
-  "/home/nuka/CLionProjects/course1/sentence.c" "/home/nuka/CLionProjects/course1/cmake-build-debug/CMakeFiles/course1.dir/sentence.c.o"
-  "/home/nuka/CLionProjects/course1/text.c" "/home/nuka/CLionProjects/course1/cmake-build-debug/CMakeFiles/course1.dir/text.c.o"
+  "/home/nuka/CLionProjects/CourseWork/main.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/main.c.o"
+  "/home/nuka/CLionProjects/CourseWork/menu.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/menu.c.o"
+  "/home/nuka/CLionProjects/CourseWork/sentence.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/sentence.c.o"
+  "/home/nuka/CLionProjects/CourseWork/sort_sentence_product.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/sort_sentence_product.c.o"
+  "/home/nuka/CLionProjects/CourseWork/text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/text.c.o"
+  "/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/unique_sentence_in_text.c.o"
+  "/home/nuka/CLionProjects/CourseWork/update_format_date.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/update_format_date.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

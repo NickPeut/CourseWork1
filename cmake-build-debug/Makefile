@@ -48,10 +48,10 @@ RM = /opt/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuka/CLionProjects/course1
+CMAKE_SOURCE_DIR = /home/nuka/CLionProjects/CourseWork
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuka/CLionProjects/course1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nuka/CLionProjects/CourseWork/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuka/CLionProjects/course1/cmake-build-debug/CMakeFiles /home/nuka/CLionProjects/course1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles /home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuka/CLionProjects/course1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/main.c.s
 .PHONY : main.c.s
 
+menu.o: menu.c.o
+
+.PHONY : menu.o
+
+# target to build an object file
+menu.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.o
+.PHONY : menu.c.o
+
+menu.i: menu.c.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.i
+.PHONY : menu.c.i
+
+menu.s: menu.c.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.s
+.PHONY : menu.c.s
+
 sentence.o: sentence.c.o
 
 .PHONY : sentence.o
@@ -176,6 +203,33 @@ sentence.s: sentence.c.s
 sentence.c.s:
 	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sentence.c.s
 .PHONY : sentence.c.s
+
+sort_sentence_product.o: sort_sentence_product.c.o
+
+.PHONY : sort_sentence_product.o
+
+# target to build an object file
+sort_sentence_product.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sort_sentence_product.c.o
+.PHONY : sort_sentence_product.c.o
+
+sort_sentence_product.i: sort_sentence_product.c.i
+
+.PHONY : sort_sentence_product.i
+
+# target to preprocess a source file
+sort_sentence_product.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sort_sentence_product.c.i
+.PHONY : sort_sentence_product.c.i
+
+sort_sentence_product.s: sort_sentence_product.c.s
+
+.PHONY : sort_sentence_product.s
+
+# target to generate assembly for a file
+sort_sentence_product.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sort_sentence_product.c.s
+.PHONY : sort_sentence_product.c.s
 
 text.o: text.c.o
 
@@ -204,6 +258,60 @@ text.c.s:
 	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/text.c.s
 .PHONY : text.c.s
 
+unique_sentence_in_text.o: unique_sentence_in_text.c.o
+
+.PHONY : unique_sentence_in_text.o
+
+# target to build an object file
+unique_sentence_in_text.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/unique_sentence_in_text.c.o
+.PHONY : unique_sentence_in_text.c.o
+
+unique_sentence_in_text.i: unique_sentence_in_text.c.i
+
+.PHONY : unique_sentence_in_text.i
+
+# target to preprocess a source file
+unique_sentence_in_text.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/unique_sentence_in_text.c.i
+.PHONY : unique_sentence_in_text.c.i
+
+unique_sentence_in_text.s: unique_sentence_in_text.c.s
+
+.PHONY : unique_sentence_in_text.s
+
+# target to generate assembly for a file
+unique_sentence_in_text.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/unique_sentence_in_text.c.s
+.PHONY : unique_sentence_in_text.c.s
+
+update_format_date.o: update_format_date.c.o
+
+.PHONY : update_format_date.o
+
+# target to build an object file
+update_format_date.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/update_format_date.c.o
+.PHONY : update_format_date.c.o
+
+update_format_date.i: update_format_date.c.i
+
+.PHONY : update_format_date.i
+
+# target to preprocess a source file
+update_format_date.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/update_format_date.c.i
+.PHONY : update_format_date.c.i
+
+update_format_date.s: update_format_date.c.s
+
+.PHONY : update_format_date.s
+
+# target to generate assembly for a file
+update_format_date.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/update_format_date.c.s
+.PHONY : update_format_date.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,12 +324,24 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... sentence.o"
 	@echo "... sentence.i"
 	@echo "... sentence.s"
+	@echo "... sort_sentence_product.o"
+	@echo "... sort_sentence_product.i"
+	@echo "... sort_sentence_product.s"
 	@echo "... text.o"
 	@echo "... text.i"
 	@echo "... text.s"
+	@echo "... unique_sentence_in_text.o"
+	@echo "... unique_sentence_in_text.i"
+	@echo "... unique_sentence_in_text.s"
+	@echo "... update_format_date.o"
+	@echo "... update_format_date.i"
+	@echo "... update_format_date.s"
 .PHONY : help
 
 

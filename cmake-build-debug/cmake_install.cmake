@@ -1,4 +1,4 @@
-# Install script for directory: /home/nuka/CLionProjects/course1
+# Install script for directory: /home/nuka/CLionProjects/CourseWork
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nuka/CLionProjects/course1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
