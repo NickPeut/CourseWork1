@@ -68,7 +68,6 @@ bool check(Text_t *text, Sentence_t *word, int index) {
     wchar_t* checkWStr = malloc(sizeof(wchar_t) * (text->sentences[index]->size + 2));
     wcpcpy(checkWStr, text->sentences[index]->symbols);
     wchar_t *buff;
-    fflush(stdout);
 
     wchar_t * pch = wcstok(checkWStr,L" ,.", &buff);
 
