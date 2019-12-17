@@ -1,6 +1,5 @@
 #include "update_format_date.h"
 
-
 Sentence_t* foundDate(Sentence_t *sentence);
 bool checkDate(Sentence_t *sentence, size_t index, wchar_t date[12]);
 Sentence_t* updateSentenceDate(Sentence_t *sentence, size_t index, wchar_t* date);

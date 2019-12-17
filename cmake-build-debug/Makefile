@@ -123,221 +123,221 @@ course1/fast:
 	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/build
 .PHONY : course1/fast
 
-main.o: main.c.o
+src/main.o: src/main.c.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/main.c.s
-.PHONY : main.c.s
-
-menu.o: menu.c.o
-
-.PHONY : menu.o
+.PHONY : src/main.o
 
 # target to build an object file
-menu.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.o
-.PHONY : menu.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-menu.i: menu.c.i
+src/main.i: src/main.c.i
 
-.PHONY : menu.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-menu.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.i
-.PHONY : menu.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-menu.s: menu.c.s
+src/main.s: src/main.c.s
 
-.PHONY : menu.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-menu.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/menu.c.s
-.PHONY : menu.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-processign_text.o: processign_text.c.o
+src/menu.o: src/menu.c.o
 
-.PHONY : processign_text.o
+.PHONY : src/menu.o
 
 # target to build an object file
-processign_text.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/processign_text.c.o
-.PHONY : processign_text.c.o
+src/menu.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/menu.c.o
+.PHONY : src/menu.c.o
 
-processign_text.i: processign_text.c.i
+src/menu.i: src/menu.c.i
 
-.PHONY : processign_text.i
+.PHONY : src/menu.i
 
 # target to preprocess a source file
-processign_text.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/processign_text.c.i
-.PHONY : processign_text.c.i
+src/menu.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/menu.c.i
+.PHONY : src/menu.c.i
 
-processign_text.s: processign_text.c.s
+src/menu.s: src/menu.c.s
 
-.PHONY : processign_text.s
+.PHONY : src/menu.s
 
 # target to generate assembly for a file
-processign_text.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/processign_text.c.s
-.PHONY : processign_text.c.s
+src/menu.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/menu.c.s
+.PHONY : src/menu.c.s
 
-sentence.o: sentence.c.o
+src/processing_text.o: src/processing_text.c.o
 
-.PHONY : sentence.o
+.PHONY : src/processing_text.o
 
 # target to build an object file
-sentence.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sentence.c.o
-.PHONY : sentence.c.o
+src/processing_text.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/processing_text.c.o
+.PHONY : src/processing_text.c.o
 
-sentence.i: sentence.c.i
+src/processing_text.i: src/processing_text.c.i
 
-.PHONY : sentence.i
+.PHONY : src/processing_text.i
 
 # target to preprocess a source file
-sentence.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sentence.c.i
-.PHONY : sentence.c.i
+src/processing_text.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/processing_text.c.i
+.PHONY : src/processing_text.c.i
 
-sentence.s: sentence.c.s
+src/processing_text.s: src/processing_text.c.s
 
-.PHONY : sentence.s
+.PHONY : src/processing_text.s
 
 # target to generate assembly for a file
-sentence.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sentence.c.s
-.PHONY : sentence.c.s
+src/processing_text.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/processing_text.c.s
+.PHONY : src/processing_text.c.s
 
-sort_sentence_product.o: sort_sentence_product.c.o
+src/sentence.o: src/sentence.c.o
 
-.PHONY : sort_sentence_product.o
+.PHONY : src/sentence.o
 
 # target to build an object file
-sort_sentence_product.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sort_sentence_product.c.o
-.PHONY : sort_sentence_product.c.o
+src/sentence.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/sentence.c.o
+.PHONY : src/sentence.c.o
 
-sort_sentence_product.i: sort_sentence_product.c.i
+src/sentence.i: src/sentence.c.i
 
-.PHONY : sort_sentence_product.i
+.PHONY : src/sentence.i
 
 # target to preprocess a source file
-sort_sentence_product.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sort_sentence_product.c.i
-.PHONY : sort_sentence_product.c.i
+src/sentence.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/sentence.c.i
+.PHONY : src/sentence.c.i
 
-sort_sentence_product.s: sort_sentence_product.c.s
+src/sentence.s: src/sentence.c.s
 
-.PHONY : sort_sentence_product.s
+.PHONY : src/sentence.s
 
 # target to generate assembly for a file
-sort_sentence_product.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/sort_sentence_product.c.s
-.PHONY : sort_sentence_product.c.s
+src/sentence.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/sentence.c.s
+.PHONY : src/sentence.c.s
 
-text.o: text.c.o
+src/sort_sentence_product.o: src/sort_sentence_product.c.o
 
-.PHONY : text.o
+.PHONY : src/sort_sentence_product.o
 
 # target to build an object file
-text.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/text.c.o
-.PHONY : text.c.o
+src/sort_sentence_product.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/sort_sentence_product.c.o
+.PHONY : src/sort_sentence_product.c.o
 
-text.i: text.c.i
+src/sort_sentence_product.i: src/sort_sentence_product.c.i
 
-.PHONY : text.i
+.PHONY : src/sort_sentence_product.i
 
 # target to preprocess a source file
-text.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/text.c.i
-.PHONY : text.c.i
+src/sort_sentence_product.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/sort_sentence_product.c.i
+.PHONY : src/sort_sentence_product.c.i
 
-text.s: text.c.s
+src/sort_sentence_product.s: src/sort_sentence_product.c.s
 
-.PHONY : text.s
+.PHONY : src/sort_sentence_product.s
 
 # target to generate assembly for a file
-text.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/text.c.s
-.PHONY : text.c.s
+src/sort_sentence_product.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/sort_sentence_product.c.s
+.PHONY : src/sort_sentence_product.c.s
 
-unique_sentence_in_text.o: unique_sentence_in_text.c.o
+src/text.o: src/text.c.o
 
-.PHONY : unique_sentence_in_text.o
+.PHONY : src/text.o
 
 # target to build an object file
-unique_sentence_in_text.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/unique_sentence_in_text.c.o
-.PHONY : unique_sentence_in_text.c.o
+src/text.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/text.c.o
+.PHONY : src/text.c.o
 
-unique_sentence_in_text.i: unique_sentence_in_text.c.i
+src/text.i: src/text.c.i
 
-.PHONY : unique_sentence_in_text.i
+.PHONY : src/text.i
 
 # target to preprocess a source file
-unique_sentence_in_text.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/unique_sentence_in_text.c.i
-.PHONY : unique_sentence_in_text.c.i
+src/text.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/text.c.i
+.PHONY : src/text.c.i
 
-unique_sentence_in_text.s: unique_sentence_in_text.c.s
+src/text.s: src/text.c.s
 
-.PHONY : unique_sentence_in_text.s
+.PHONY : src/text.s
 
 # target to generate assembly for a file
-unique_sentence_in_text.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/unique_sentence_in_text.c.s
-.PHONY : unique_sentence_in_text.c.s
+src/text.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/text.c.s
+.PHONY : src/text.c.s
 
-update_format_date.o: update_format_date.c.o
+src/unique_sentence_in_text.o: src/unique_sentence_in_text.c.o
 
-.PHONY : update_format_date.o
+.PHONY : src/unique_sentence_in_text.o
 
 # target to build an object file
-update_format_date.c.o:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/update_format_date.c.o
-.PHONY : update_format_date.c.o
+src/unique_sentence_in_text.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o
+.PHONY : src/unique_sentence_in_text.c.o
 
-update_format_date.i: update_format_date.c.i
+src/unique_sentence_in_text.i: src/unique_sentence_in_text.c.i
 
-.PHONY : update_format_date.i
+.PHONY : src/unique_sentence_in_text.i
 
 # target to preprocess a source file
-update_format_date.c.i:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/update_format_date.c.i
-.PHONY : update_format_date.c.i
+src/unique_sentence_in_text.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/unique_sentence_in_text.c.i
+.PHONY : src/unique_sentence_in_text.c.i
 
-update_format_date.s: update_format_date.c.s
+src/unique_sentence_in_text.s: src/unique_sentence_in_text.c.s
 
-.PHONY : update_format_date.s
+.PHONY : src/unique_sentence_in_text.s
 
 # target to generate assembly for a file
-update_format_date.c.s:
-	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/update_format_date.c.s
-.PHONY : update_format_date.c.s
+src/unique_sentence_in_text.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/unique_sentence_in_text.c.s
+.PHONY : src/unique_sentence_in_text.c.s
+
+src/update_format_date.o: src/update_format_date.c.o
+
+.PHONY : src/update_format_date.o
+
+# target to build an object file
+src/update_format_date.c.o:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/update_format_date.c.o
+.PHONY : src/update_format_date.c.o
+
+src/update_format_date.i: src/update_format_date.c.i
+
+.PHONY : src/update_format_date.i
+
+# target to preprocess a source file
+src/update_format_date.c.i:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/update_format_date.c.i
+.PHONY : src/update_format_date.c.i
+
+src/update_format_date.s: src/update_format_date.c.s
+
+.PHONY : src/update_format_date.s
+
+# target to generate assembly for a file
+src/update_format_date.c.s:
+	$(MAKE) -f CMakeFiles/course1.dir/build.make CMakeFiles/course1.dir/src/update_format_date.c.s
+.PHONY : src/update_format_date.c.s
 
 # Help Target
 help:
@@ -348,30 +348,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... course1"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
-	@echo "... processign_text.o"
-	@echo "... processign_text.i"
-	@echo "... processign_text.s"
-	@echo "... sentence.o"
-	@echo "... sentence.i"
-	@echo "... sentence.s"
-	@echo "... sort_sentence_product.o"
-	@echo "... sort_sentence_product.i"
-	@echo "... sort_sentence_product.s"
-	@echo "... text.o"
-	@echo "... text.i"
-	@echo "... text.s"
-	@echo "... unique_sentence_in_text.o"
-	@echo "... unique_sentence_in_text.i"
-	@echo "... unique_sentence_in_text.s"
-	@echo "... update_format_date.o"
-	@echo "... update_format_date.i"
-	@echo "... update_format_date.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/menu.o"
+	@echo "... src/menu.i"
+	@echo "... src/menu.s"
+	@echo "... src/processing_text.o"
+	@echo "... src/processing_text.i"
+	@echo "... src/processing_text.s"
+	@echo "... src/sentence.o"
+	@echo "... src/sentence.i"
+	@echo "... src/sentence.s"
+	@echo "... src/sort_sentence_product.o"
+	@echo "... src/sort_sentence_product.i"
+	@echo "... src/sort_sentence_product.s"
+	@echo "... src/text.o"
+	@echo "... src/text.i"
+	@echo "... src/text.s"
+	@echo "... src/unique_sentence_in_text.o"
+	@echo "... src/unique_sentence_in_text.i"
+	@echo "... src/unique_sentence_in_text.s"
+	@echo "... src/update_format_date.o"
+	@echo "... src/update_format_date.i"
+	@echo "... src/update_format_date.s"
 .PHONY : help
 
 

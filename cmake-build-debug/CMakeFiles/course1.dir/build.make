@@ -57,132 +57,132 @@ include CMakeFiles/course1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/course1.dir/flags.make
 
-CMakeFiles/course1.dir/main.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/course1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/main.c.o   -c /home/nuka/CLionProjects/CourseWork/main.c
+CMakeFiles/course1.dir/src/main.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/course1.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/main.c.o   -c /home/nuka/CLionProjects/CourseWork/src/main.c
 
-CMakeFiles/course1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/main.c > CMakeFiles/course1.dir/main.c.i
+CMakeFiles/course1.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/main.c > CMakeFiles/course1.dir/src/main.c.i
 
-CMakeFiles/course1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/main.c -o CMakeFiles/course1.dir/main.c.s
+CMakeFiles/course1.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/main.c -o CMakeFiles/course1.dir/src/main.c.s
 
-CMakeFiles/course1.dir/text.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/text.c.o: ../text.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/course1.dir/text.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/text.c.o   -c /home/nuka/CLionProjects/CourseWork/text.c
+CMakeFiles/course1.dir/src/text.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/text.c.o: ../src/text.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/course1.dir/src/text.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/text.c.o   -c /home/nuka/CLionProjects/CourseWork/src/text.c
 
-CMakeFiles/course1.dir/text.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/text.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/text.c > CMakeFiles/course1.dir/text.c.i
+CMakeFiles/course1.dir/src/text.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/text.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/text.c > CMakeFiles/course1.dir/src/text.c.i
 
-CMakeFiles/course1.dir/text.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/text.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/text.c -o CMakeFiles/course1.dir/text.c.s
+CMakeFiles/course1.dir/src/text.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/text.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/text.c -o CMakeFiles/course1.dir/src/text.c.s
 
-CMakeFiles/course1.dir/sentence.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/sentence.c.o: ../sentence.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/course1.dir/sentence.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/sentence.c.o   -c /home/nuka/CLionProjects/CourseWork/sentence.c
+CMakeFiles/course1.dir/src/sentence.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/sentence.c.o: ../src/sentence.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/course1.dir/src/sentence.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/sentence.c.o   -c /home/nuka/CLionProjects/CourseWork/src/sentence.c
 
-CMakeFiles/course1.dir/sentence.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/sentence.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/sentence.c > CMakeFiles/course1.dir/sentence.c.i
+CMakeFiles/course1.dir/src/sentence.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/sentence.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/sentence.c > CMakeFiles/course1.dir/src/sentence.c.i
 
-CMakeFiles/course1.dir/sentence.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/sentence.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/sentence.c -o CMakeFiles/course1.dir/sentence.c.s
+CMakeFiles/course1.dir/src/sentence.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/sentence.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/sentence.c -o CMakeFiles/course1.dir/src/sentence.c.s
 
-CMakeFiles/course1.dir/menu.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/menu.c.o: ../menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/course1.dir/menu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/menu.c.o   -c /home/nuka/CLionProjects/CourseWork/menu.c
+CMakeFiles/course1.dir/src/menu.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/menu.c.o: ../src/menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/course1.dir/src/menu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/menu.c.o   -c /home/nuka/CLionProjects/CourseWork/src/menu.c
 
-CMakeFiles/course1.dir/menu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/menu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/menu.c > CMakeFiles/course1.dir/menu.c.i
+CMakeFiles/course1.dir/src/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/menu.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/menu.c > CMakeFiles/course1.dir/src/menu.c.i
 
-CMakeFiles/course1.dir/menu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/menu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/menu.c -o CMakeFiles/course1.dir/menu.c.s
+CMakeFiles/course1.dir/src/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/menu.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/menu.c -o CMakeFiles/course1.dir/src/menu.c.s
 
-CMakeFiles/course1.dir/unique_sentence_in_text.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/unique_sentence_in_text.c.o: ../unique_sentence_in_text.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/course1.dir/unique_sentence_in_text.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/unique_sentence_in_text.c.o   -c /home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c
+CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o: ../src/unique_sentence_in_text.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o   -c /home/nuka/CLionProjects/CourseWork/src/unique_sentence_in_text.c
 
-CMakeFiles/course1.dir/unique_sentence_in_text.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/unique_sentence_in_text.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c > CMakeFiles/course1.dir/unique_sentence_in_text.c.i
+CMakeFiles/course1.dir/src/unique_sentence_in_text.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/unique_sentence_in_text.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/unique_sentence_in_text.c > CMakeFiles/course1.dir/src/unique_sentence_in_text.c.i
 
-CMakeFiles/course1.dir/unique_sentence_in_text.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/unique_sentence_in_text.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c -o CMakeFiles/course1.dir/unique_sentence_in_text.c.s
+CMakeFiles/course1.dir/src/unique_sentence_in_text.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/unique_sentence_in_text.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/unique_sentence_in_text.c -o CMakeFiles/course1.dir/src/unique_sentence_in_text.c.s
 
-CMakeFiles/course1.dir/update_format_date.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/update_format_date.c.o: ../update_format_date.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/course1.dir/update_format_date.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/update_format_date.c.o   -c /home/nuka/CLionProjects/CourseWork/update_format_date.c
+CMakeFiles/course1.dir/src/update_format_date.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/update_format_date.c.o: ../src/update_format_date.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/course1.dir/src/update_format_date.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/update_format_date.c.o   -c /home/nuka/CLionProjects/CourseWork/src/update_format_date.c
 
-CMakeFiles/course1.dir/update_format_date.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/update_format_date.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/update_format_date.c > CMakeFiles/course1.dir/update_format_date.c.i
+CMakeFiles/course1.dir/src/update_format_date.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/update_format_date.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/update_format_date.c > CMakeFiles/course1.dir/src/update_format_date.c.i
 
-CMakeFiles/course1.dir/update_format_date.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/update_format_date.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/update_format_date.c -o CMakeFiles/course1.dir/update_format_date.c.s
+CMakeFiles/course1.dir/src/update_format_date.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/update_format_date.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/update_format_date.c -o CMakeFiles/course1.dir/src/update_format_date.c.s
 
-CMakeFiles/course1.dir/sort_sentence_product.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/sort_sentence_product.c.o: ../sort_sentence_product.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/course1.dir/sort_sentence_product.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/sort_sentence_product.c.o   -c /home/nuka/CLionProjects/CourseWork/sort_sentence_product.c
+CMakeFiles/course1.dir/src/sort_sentence_product.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/sort_sentence_product.c.o: ../src/sort_sentence_product.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/course1.dir/src/sort_sentence_product.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/sort_sentence_product.c.o   -c /home/nuka/CLionProjects/CourseWork/src/sort_sentence_product.c
 
-CMakeFiles/course1.dir/sort_sentence_product.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/sort_sentence_product.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/sort_sentence_product.c > CMakeFiles/course1.dir/sort_sentence_product.c.i
+CMakeFiles/course1.dir/src/sort_sentence_product.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/sort_sentence_product.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/sort_sentence_product.c > CMakeFiles/course1.dir/src/sort_sentence_product.c.i
 
-CMakeFiles/course1.dir/sort_sentence_product.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/sort_sentence_product.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/sort_sentence_product.c -o CMakeFiles/course1.dir/sort_sentence_product.c.s
+CMakeFiles/course1.dir/src/sort_sentence_product.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/sort_sentence_product.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/sort_sentence_product.c -o CMakeFiles/course1.dir/src/sort_sentence_product.c.s
 
-CMakeFiles/course1.dir/processign_text.c.o: CMakeFiles/course1.dir/flags.make
-CMakeFiles/course1.dir/processign_text.c.o: ../processign_text.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/course1.dir/processign_text.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/processign_text.c.o   -c /home/nuka/CLionProjects/CourseWork/processign_text.c
+CMakeFiles/course1.dir/src/processing_text.c.o: CMakeFiles/course1.dir/flags.make
+CMakeFiles/course1.dir/src/processing_text.c.o: ../src/processing_text.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/course1.dir/src/processing_text.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/course1.dir/src/processing_text.c.o   -c /home/nuka/CLionProjects/CourseWork/src/processing_text.c
 
-CMakeFiles/course1.dir/processign_text.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/processign_text.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/processign_text.c > CMakeFiles/course1.dir/processign_text.c.i
+CMakeFiles/course1.dir/src/processing_text.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/course1.dir/src/processing_text.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nuka/CLionProjects/CourseWork/src/processing_text.c > CMakeFiles/course1.dir/src/processing_text.c.i
 
-CMakeFiles/course1.dir/processign_text.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/processign_text.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/processign_text.c -o CMakeFiles/course1.dir/processign_text.c.s
+CMakeFiles/course1.dir/src/processing_text.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/course1.dir/src/processing_text.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nuka/CLionProjects/CourseWork/src/processing_text.c -o CMakeFiles/course1.dir/src/processing_text.c.s
 
 # Object files for target course1
 course1_OBJECTS = \
-"CMakeFiles/course1.dir/main.c.o" \
-"CMakeFiles/course1.dir/text.c.o" \
-"CMakeFiles/course1.dir/sentence.c.o" \
-"CMakeFiles/course1.dir/menu.c.o" \
-"CMakeFiles/course1.dir/unique_sentence_in_text.c.o" \
-"CMakeFiles/course1.dir/update_format_date.c.o" \
-"CMakeFiles/course1.dir/sort_sentence_product.c.o" \
-"CMakeFiles/course1.dir/processign_text.c.o"
+"CMakeFiles/course1.dir/src/main.c.o" \
+"CMakeFiles/course1.dir/src/text.c.o" \
+"CMakeFiles/course1.dir/src/sentence.c.o" \
+"CMakeFiles/course1.dir/src/menu.c.o" \
+"CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o" \
+"CMakeFiles/course1.dir/src/update_format_date.c.o" \
+"CMakeFiles/course1.dir/src/sort_sentence_product.c.o" \
+"CMakeFiles/course1.dir/src/processing_text.c.o"
 
 # External object files for target course1
 course1_EXTERNAL_OBJECTS =
 
-course1: CMakeFiles/course1.dir/main.c.o
-course1: CMakeFiles/course1.dir/text.c.o
-course1: CMakeFiles/course1.dir/sentence.c.o
-course1: CMakeFiles/course1.dir/menu.c.o
-course1: CMakeFiles/course1.dir/unique_sentence_in_text.c.o
-course1: CMakeFiles/course1.dir/update_format_date.c.o
-course1: CMakeFiles/course1.dir/sort_sentence_product.c.o
-course1: CMakeFiles/course1.dir/processign_text.c.o
+course1: CMakeFiles/course1.dir/src/main.c.o
+course1: CMakeFiles/course1.dir/src/text.c.o
+course1: CMakeFiles/course1.dir/src/sentence.c.o
+course1: CMakeFiles/course1.dir/src/menu.c.o
+course1: CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o
+course1: CMakeFiles/course1.dir/src/update_format_date.c.o
+course1: CMakeFiles/course1.dir/src/sort_sentence_product.c.o
+course1: CMakeFiles/course1.dir/src/processing_text.c.o
 course1: CMakeFiles/course1.dir/build.make
 course1: CMakeFiles/course1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable course1"

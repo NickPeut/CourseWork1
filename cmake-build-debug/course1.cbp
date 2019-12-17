@@ -34,6 +34,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/nuka/CLionProjects/CourseWork/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -54,6 +55,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/nuka/CLionProjects/CourseWork/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -78,49 +80,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/main.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/menu.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/menu.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/processing_text.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/menu.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/sentence.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/processign_text.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/sort_sentence_product.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/processign_text.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/text.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/sentence.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/unique_sentence_in_text.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/sentence.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/include/update_format_date.h">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/sort_sentence_product.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/main.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/sort_sentence_product.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/menu.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/text.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/processing_text.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/text.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/sentence.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/sort_sentence_product.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/text.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/update_format_date.c">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/unique_sentence_in_text.c">
 			<Option target="course1"/>
 		</Unit>
-		<Unit filename="/home/nuka/CLionProjects/CourseWork/update_format_date.h">
+		<Unit filename="/home/nuka/CLionProjects/CourseWork/src/update_format_date.c">
 			<Option target="course1"/>
 		</Unit>
 		<Unit filename="/home/nuka/CLionProjects/CourseWork/CMakeLists.txt">

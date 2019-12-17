@@ -1,4 +1,4 @@
-#include "processign_text.h"
+#include "processing_text.h"
 
 bool foundInSentence(Sentence_t* sentence);
 bool isSentenceIncludeDigit(Sentence_t* sentence);

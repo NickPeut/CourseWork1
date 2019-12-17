@@ -4,19 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nuka/CLionProjects/CourseWork/main.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/main.c.o"
-  "/home/nuka/CLionProjects/CourseWork/menu.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/menu.c.o"
-  "/home/nuka/CLionProjects/CourseWork/processign_text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/processign_text.c.o"
-  "/home/nuka/CLionProjects/CourseWork/sentence.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/sentence.c.o"
-  "/home/nuka/CLionProjects/CourseWork/sort_sentence_product.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/sort_sentence_product.c.o"
-  "/home/nuka/CLionProjects/CourseWork/text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/text.c.o"
-  "/home/nuka/CLionProjects/CourseWork/unique_sentence_in_text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/unique_sentence_in_text.c.o"
-  "/home/nuka/CLionProjects/CourseWork/update_format_date.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/update_format_date.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/main.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/main.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/menu.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/menu.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/processing_text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/processing_text.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/sentence.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/sentence.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/sort_sentence_product.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/sort_sentence_product.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/text.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/unique_sentence_in_text.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/unique_sentence_in_text.c.o"
+  "/home/nuka/CLionProjects/CourseWork/src/update_format_date.c" "/home/nuka/CLionProjects/CourseWork/cmake-build-debug/CMakeFiles/course1.dir/src/update_format_date.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.

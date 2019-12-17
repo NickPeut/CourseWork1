@@ -1,6 +1,6 @@
 #include "unique_sentence_in_text.h"
 
-Sentence_t* getWord(Text_t* text, size_t* i, size_t* j);
+Sentence_t* getWord(Text_t* text, size_t* n, size_t* m);
 void checkWordUnique(Text_t *text, Sentence_t *word, Text_t *ansText, size_t i);
 bool check(Text_t *text, Sentence_t *word, int index);
 
@@ -20,25 +20,25 @@ void printUniqueWords(Text_t* text, FILE* file) {
 
 
 
-Sentence_t* getWord(Text_t* text, size_t* i, size_t* j){
+Sentence_t* getWord(Text_t* text, size_t* n, size_t* m) {
     Sentence_t *word = (Sentence_t *) malloc(sizeof(Sentence_t));
     initSentence(word);
-    while(*i < text->size) {
-        if(*j != 0)
-            skipSeparators(j, text, i);
-        if(*j >= text->sentences[*i]->size){
-            (*i)++;
-            (*j = 0);
+    while(*n < text->size) {
+        if(*m != 0)
+            skipSeparators(m, text, n);
+        if(*m >= text->sentences[*n]->size){
+            (*n)++;
+            (*m = 0);
         }
-        while(*i < text->size && *j < text->sentences[*i]->size && !isEndingOfSentence(text->sentences[*i]->symbols[*j]) && !isSentenceSeparator(text->sentences[*i]->symbols[*j])){
-            addSymbolToSentence(word, text->sentences[*i]->symbols[*j]);
-            (*j)++;
-            if(*j >= text->sentences[*i]->size || isEndingOfSentence(text->sentences[*i]->symbols[*j]) || isSentenceSeparator(text->sentences[*i]->symbols[*j])){
+        while(*n < text->size && *m < text->sentences[*n]->size && !isEndingOfSentence(text->sentences[*n]->symbols[*m]) && !isSentenceSeparator(text->sentences[*n]->symbols[*m])){
+            addSymbolToSentence(word, text->sentences[*n]->symbols[*m]);
+            (*m)++;
+            if(*m >= text->sentences[*n]->size || isEndingOfSentence(text->sentences[*n]->symbols[*m]) || isSentenceSeparator(text->sentences[*n]->symbols[*m])){
                 return word;
             }
         }
-        (*i)++;
-        (*j) = 0;
+        (*n)++;
+        (*m) = 0;
     }
     return word;
 }
